@@ -3,6 +3,5 @@
 <br>
 <h2>Tutorial videos and Demos</h2>
 <p>Tutorial videos and Demos really helped out as i had to watch and rewater them just to be able to understand what i was doing and give out the best in my expected results</p>
-
-![1](img\image_1.png)
-### The image above is a n example of the results and more work needs to be done.
+![1](img/image_1.png)
+### The image above is an example of the results and more work needs to be done. cccv

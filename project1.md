@@ -188,6 +188,7 @@ Click the Download button.
 <p> &#x2022; Install certbot by executing the following commands: <code> sudo apt update </code>  <code>sudo apt install certbot python3-certbot-nginx </code>
 
 ![32](img/image_048.png)
+![32](img/image_048.png)
 
 <p> &#x2022; Verify the website's SSL using the OpenSSL utility with the command: <code> openssl s_client -connect toolsandfit.online:443 </code>
 

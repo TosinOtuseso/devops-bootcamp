@@ -175,7 +175,7 @@ Click the Download button.
 
 <p> &#x2022; Open your terminal and run <code> sudo nano /etc/nginx/sites-available/default </code> to edit your settings. Enter your domain and subdomain names, then save the changes.
 
-![32](img/image_44.png)
+![32](img/image_047.png)
 
 
 <p> &#x2022; Execute the <code> sudo certbot --nginx </code> command to request your certificate. Follow the instructions provided by certbot and select the domain name for which you would like to activate HTTPS.
@@ -187,10 +187,13 @@ Click the Download button.
 ## Install certbot and Request For an SSL/TLS Certificate
 <p> &#x2022; Install certbot by executing the following commands: <code> sudo apt update </code>  <code>sudo apt install certbot python3-certbot-nginx </code>
 
-![32](img/image_48.png)
+![32](img/image_048.png)
 
 <p> &#x2022; Verify the website's SSL using the OpenSSL utility with the command: <code> openssl s_client -connect toolsandfit.online:443 </code>
 
 ![32](img/image_48.png)
 
-Visit https://<domain name> to view your website. that https://www.toolsandfix.online/
+<p> &#x2022; Visit https://<domain name> to view your website. that https://www.toolsandfix.online/
+
+## I survived!!!!!
+# THE END OF THE PROJECT!

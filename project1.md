@@ -155,18 +155,42 @@ Click the Download button.
 
 <p> &#x2022; Enter your Domain name①, choose Public hosted zone② and then click on Create hosted zone③. </p>
 
-![31](img/image_41.png)
+![32](img/image_42.png)
+
+<p> &#x2022; Go back to your domain registrar and select Custom DNS within the NAMESERVERS section.
+
+![33](img/image_43.png)
+
+<p> &#x2022; Paste your Elastic IP address and then click on Create records.
+
+<p> &#x2022; Your A record has been successfully created.
+
+![34](img/image_47.png)
+
+
+<p> &#x2022; Go to your domain name in a web browser to verify that your website is accessible.
+
+![35](img/image_45.png)
+
+
+<p> &#x2022; Open your terminal and run <code> sudo nano /etc/nginx/sites-available/default </code> to edit your settings. Enter your domain and subdomain names, then save the changes.
+
+![32](img/image_44.png)
+
+
+<p> &#x2022; Execute the <code> sudo certbot --nginx </code> command to request your certificate. Follow the instructions provided by certbot and select the domain name for which you would like to activate HTTPS.
+
+![32](img/image_44.png)
 
 
 
-<p> Although the project was very interresting, alot of challenges were encountered , yet given up wasnt part of the deal. </p>
-<br>
-<h2>Tutorial videos and Demos</h2>
-<p>Tutorial videos and Demos really helped out as i had to watch and rewater them just to be able to understand what i was doing and give out the best in my expected results</p>
+## Install certbot and Request For an SSL/TLS Certificate
+<p> &#x2022; Install certbot by executing the following commands: <code> sudo apt update </code>  <code>sudo apt install certbot python3-certbot-nginx </code>
 
-![1](img/image_1.png)
-### The image above is an example of the results and more work needs to be done. 
+![32](img/image_48.png)
 
-![2](img/image_2.png)
+<p> &#x2022; Verify the website's SSL using the OpenSSL utility with the command: <code> openssl s_client -connect toolsandfit.online:443 </code>
 
-![3](img/image_3.png)
+![32](img/image_48.png)
+
+Visit https://<domain name> to view your website. that https://www.toolsandfix.online/

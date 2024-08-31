@@ -197,3 +197,32 @@ Click the Download button.
 
 ## I survived!!!!!
 # THE END OF THE PROJECT!
+sudo curl -o /var/www/html/2129_crispy_kitchen.zip https://www.tooplate.com/zip-templates
+/2129_crispy_kitchen.zip && sudo unzip -d /var/www/html/ /var/www/html/2129_crispy_kitchen.zip && sudo rm -f /var/w
+ww/html/2129_crispy_kitchen.zip
+
+server {
+    listen 80;
+    server_name example.com www.example.com;
+
+    root /var/www/html/2132_clean_work;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+
+server {
+    listen 80;
+    server_name example.com www.example.com;
+
+    root /var/www/html/2129_crispy_kitchen;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+

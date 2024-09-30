@@ -5,7 +5,7 @@ To start the project directory structure and set up a virtual environment, I ope
 <p> &#x2022; To open up your terminal in VScode
 Use the shortcut "Ctrl + ` " (backtick key). - Windows users
 
-![1](img/img_1.png)
+![1](img/img1.png)
 
 
 ### Using gitbash

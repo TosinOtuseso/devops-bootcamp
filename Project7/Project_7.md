@@ -1,4 +1,4 @@
-gi<h1>AWS VPC Project (Project 7)</h1>
+<h1>AWS VPC Project (Project 7)</h1>
 
  &#x2022; A Virtual Private Cloud (VPC) is a private, isolated section of a public cloud where users can launch and manage resources like virtual machines, databases, and storage, while keeping them logically separate from other users of the same cloud. A VPC combines the scalability and flexibility of public cloud infrastructure with the security and control features of private networks.
 
@@ -25,10 +25,32 @@ gi<h1>AWS VPC Project (Project 7)</h1>
 
 ![3](img/img3.png)
 
-Subnet Name	        Availability Zone	CIDR Block	       Type
-Prod-Web-Public-2a	us-west-2a	        10.0.0.0/28	       Public
-Prod-Web-Public-2b	us-west-2b	        10.0.0.16/28	   Public
-Prod-Web-Public-2c	us-west-2c	        10.0.0.32/28	   Public
+<table>
+  <tr>
+    <th>Subnet Name</th>
+    <th>Availability Zone</th>
+    <th>CIDR Block</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>Prod-Web-Public-2a</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.0/28</td>
+    <td>Public</td>
+  </tr>
+  <tr>
+    <td>Prod-Web-Public-2b</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.16/28</td>
+    <td>Public</td>
+  </tr>
+  <tr>
+    <td>Prod-Web-Public-2c</td>
+    <td>us-west-2c</td>
+    <td>10.0.0.32/28</td>
+    <td>Public</td>
+  </tr>
+</table>
 
  &#x2022; Using the above information data, we will create the public subnet
 
@@ -50,31 +72,120 @@ Prod-Web-Public-2c	us-west-2c	        10.0.0.32/28	   Public
 ### Following the steps used to create the above, I created for other subnets
  &#x2022; Application Subnets
   <br>
-Subnet Name	           Availability Zone	CIDR Block	    Type
-Prod-App-Private-2a	   us-west-2a	        10.0.0.48/28	Private
-Prod-App-Private-2b	   us-west-2b	        10.0.0.64/28	Private
-Prod-App-Private-2c	   us-west-2c	        10.0.0.80/28	Private
+<table>
+  <tr>
+    <th>Subnet Name</th>
+    <th>Availability Zone</th>
+    <th>CIDR Block</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>Prod-App-Private-2a</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.48/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-App-Private-2b</td>
+    <td>us-west-2b</td>
+    <td>10.0.0.64/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-App-Private-2c</td>
+    <td>us-west-2c</td>
+    <td>10.0.0.80/28</td>
+    <td>Private</td>
+  </tr>
+</table>
 
  &#x2022; Database Subnets 
  <br>
-Subnet Name	        Availability Zone	CIDR Block	    Type
-Prod-DB-Private-2a	us-west-2a	        10.0.0.96/28	Private
-Prod-DB-Private-2b	us-west-2b	        10.0.0.112/28	Private
-Prod-DB-Private-2c	us-west-2c	        10.0.0.128/28	Private
+ <table>
+  <tr>
+    <th>Subnet Name</th>
+    <th>Availability Zone</th>
+    <th>CIDR Block</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>Prod-DB-Private-2a</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.96/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-DB-Private-2b</td>
+    <td>us-west-2b</td>
+    <td>10.0.0.112/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-DB-Private-2c</td>
+    <td>us-west-2c</td>
+    <td>10.0.0.128/28</td>
+    <td>Private</td>
+  </tr>
+</table>
 
 &#x2022;Management Subnets
 <br>
-Subnet Name	            Availability Zone	CIDR Block	    Type
-Prod-Mgmt-Private-2a	us-west-2a	        10.0.0.144/28	Private
-Prod-Mgmt-Private-2b	us-west-2b	        10.0.0.160/28	Private
-Prod-Mgmt-Private-2c	us-west-2c	        10.0.0.176/28	Private
+ <table>
+  <tr>
+    <th>Subnet Name</th>
+    <th>Availability Zone</th>
+    <th>CIDR Block</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>Prod-Mgmt-Private-2a</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.144/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-Mgmt-Private-2b</td>
+    <td>us-west-2b</td>
+    <td>10.0.0.160/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-Mgmt-Private-2c</td>
+    <td>us-west-2c</td>
+    <td>10.0.0.176/28</td>
+    <td>Private</td>
+  </tr>
+</table>
 
 &#x2022; Platform Subnets
 <br>
-Subnet Name	                Availability Zone	CIDR Block	    Type
-Prod-Platform-Private-2a	us-west-2a	        10.0.0.192/28	Private
-Prod-Platform-Private-2b	us-west-2b	        10.0.0.208/28	Private
-Prod-Platform-Private-2c	us-west-2c	        10.0.0.224/28	Private
+ <table>
+  <tr>
+    <th>Subnet Name</th>
+    <th>Availability Zone</th>
+    <th>CIDR Block</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>Prod-Platform-Private-2a</td>
+    <td>us-west-2a</td>
+    <td>10.0.0.192/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-Platform-Private-2b</td>
+    <td>us-west-2b</td>
+    <td>10.0.0.208/28</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Prod-Platform-Private-2c</td>
+    <td>us-west-2c</td>
+    <td>10.0.0.224/28</td>
+    <td>Private</td>
+  </tr>
+</table>
+
 
 #### The result id below
 
@@ -86,12 +197,43 @@ For each subnet group, I will created a custom route table and assign rules requ
 
 For example, all three public subnets will share the same public-subnet route table.
 
-Subnet Destination      CIDR	        Target
-Public	                0.0.0.0/0	    Internet Gateway
-App	                    0.0.0.0/0	    Nat Gateway
-DB	                    0.0.0.0/0	    Nat Gateway
-Management	            0.0.0.0/0	    Nat Gateway
-Platform	            0.0.0.0/0	    Nat Gateway
+
+<table>
+  <tr>
+    <th>Subnet Destination</th>
+    <th>CIDR</th>
+    <th>Target</th>
+  </tr>
+  <tr>
+    <td>Public</td>
+    <td>0.0.0.0/0</td>
+    <td>Internet Gateway</td>
+  </tr>
+  <tr>
+    <td>App</td>
+    <td>0.0.0.0/0</td>
+    <td>Nat Gateway</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>DB</td>
+    <td>0.0.0.0/0</td>
+    <td>Nat Gateway</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Management</td>
+    <td>0.0.0.0/0</td>
+    <td>Nat Gateway</td>
+    <td>Private</td>
+  </tr>
+  <tr>
+    <td>Platform</td>
+    <td>0.0.0.0/0</td>
+    <td>Nat Gateway</td>
+    <td>Private</td>
+  </tr>
+</table>
 
 &#x2022;   creating public route table
 
@@ -147,20 +289,95 @@ The following are the tables for inbound and outbound rules for the DB NACL.
 
 &#x2022;DB NACL (Inbound Rules)
 <br>
-Rule Number       	     Type	      Protocol	    Port Range	Source IP	  Allow/Deny
-100	                  Custom TCP	  TCP            3306	  10.0.0.96/28	  Allow
-110	                  Custom TCP	  TCP            3306	  10.0.0.112/28	  Allow
-120	                  Custom TCP	  TCP            3306	  10.0.0.128/28	  Allow
-*	                 All Traffic	  All	         All	  0.0.0.0/0	      Deny
+
+<table>
+  <tr>
+    <th>Rule Number  </th>
+    <th>Type</th>
+    <th>Protocol</th>
+    <th>Port Range</th>
+    <th>Source IP</th>
+    <th>Allow/Deny</th>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Custom TCP</td>
+    <td>TCP</td>
+    <th>3306</th>  	  
+    <th>10.0.0.112/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>110</td>                  	  
+    <td>Custom TCP</td>
+    <td>TCP</td>
+    <th>3306</th>  	  
+    <th>10.0.0.112/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Custom TCP</td>    	                  	             
+    <td>TCP </td>
+    <th>3306</th>  	  
+    <th>10.0.0.112/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>All Traffic</td>
+    <td>ALL</td>                    	
+    <td>ALL</td>
+    <th>0.0.0.0/0</th>
+    <th>Deny</th>
+  </tr>
+</table>
 
 &#x2022; DB NACL (Outbound Rules)
 <br>
 
-Rule Number   	Type	    Protocol	Port Range	Destination IP	Allow/Deny
-100	            Custom TCP	TCP	        3306	    10.0.0.192/28	Allow
-110	            Custom TCP	TCP	        3306	    10.0.0.208/28	Allow
-120	            Custom TCP	TCP	        3306	    10.0.0.224/28	Allow
-*All            Traffic	    All	        All	        0.0.0.0/0	     Deny
+<table>
+  <tr>
+    <th>Rule Number  </th>
+    <th>Type</th>
+    <th>Protocol</th>
+    <th>Port Range</th>
+    <th>Destination IP</th>
+    <th>Allow/Deny</th>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Custom TCP</td>
+    <td>TCP</td>
+    <th>3306</th>  	  
+    <th>10.0.0.192/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>110</td>                  	  
+    <td>Custom TCP</td>
+    <td>TCP</td>
+    <th>3306</th>  	  
+    <th>10.0.0.208/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Custom TCP</td>    	                  	             
+    <td>TCP </td>
+    <th>3306</th>  	  
+    <th>10.0.0.224/28</th>
+    <th>Allow</th>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>All Traffic</td>
+    <td>ALL</td>                    	
+    <td>ALL</td>
+    <th>0.0.0.0/0</th>
+    <th>Deny</th>
+  </tr>
+</table>
 
 ![31](img/img31.png)
 
